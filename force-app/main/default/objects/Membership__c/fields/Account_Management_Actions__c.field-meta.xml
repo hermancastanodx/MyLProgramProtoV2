@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Management_Actions__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Management Actions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Card Management</fullName>
+                <default>false</default>
+                <label>Manage Card</label>
+            </value>
+            <value>
+                <fullName>View Transactions &amp; Statements</fullName>
+                <default>false</default>
+                <label>View Transactions &amp; Statements</label>
+            </value>
+            <value>
+                <fullName>Link Accounts</fullName>
+                <default>false</default>
+                <label>Link Accounts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

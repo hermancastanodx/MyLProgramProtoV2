@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Access_Validation_Rule__c</fullName>
+    <externalId>false</externalId>
+    <label>Access Validation Rule</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No restrictions apply</fullName>
+                <color>#33CC00</color>
+                <default>true</default>
+                <label>No restrictions apply</label>
+            </value>
+            <value>
+                <fullName>Geo-location restrictions apply</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+                <label>Geo-location restrictions apply</label>
+            </value>
+            <value>
+                <fullName>Payment instrument restrictions apply</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+                <label>Payment instrument restrictions apply</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

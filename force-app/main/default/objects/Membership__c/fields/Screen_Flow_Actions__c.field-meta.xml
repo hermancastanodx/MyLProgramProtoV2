@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screen_Flow_Actions__c</fullName>
+    <externalId>false</externalId>
+    <label>Screen Flow Actions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manage Funding Accounts</fullName>
+                <default>false</default>
+                <label>Manage Funding Accounts</label>
+            </value>
+            <value>
+                <fullName>Show Membership Balance</fullName>
+                <default>false</default>
+                <label>Show Membership Balance</label>
+            </value>
+            <value>
+                <fullName>Resend Approval Confirmation</fullName>
+                <default>false</default>
+                <label>Resend Approval Confirmation</label>
+            </value>
+            <value>
+                <fullName>Assess Membership Eligibility</fullName>
+                <default>false</default>
+                <label>Assess Membership Eligibility</label>
+            </value>
+            <value>
+                <fullName>Transfer Membership Type</fullName>
+                <default>false</default>
+                <label>Transfer Membership Type</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

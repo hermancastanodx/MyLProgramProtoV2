@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Limit_Distribution_Mode__c</fullName>
+    <description>Calculated based on Membership Line of Credit Configuration</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Calculated based on Membership Line of Credit Configuration</inlineHelpText>
+    <label>Credit Limit Distribution Mode</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Limit_Validation_Rule__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Evenly distributed across all funding accounts</fullName>
+                <default>false</default>
+                <label>Evenly distributed across all funding accounts</label>
+            </value>
+            <value>
+                <fullName>Manual distribution</fullName>
+                <default>false</default>
+                <label>Manual distribution</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Credit limit enforced at funding account level</controllingFieldValue>
+            <valueName>Evenly distributed across all funding accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Credit limit enforced at funding account level</controllingFieldValue>
+            <valueName>Manual distribution</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

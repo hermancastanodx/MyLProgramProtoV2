@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Screen_Flow_Actions__c</fullName>
+    <externalId>false</externalId>
+    <label>Screen Flow Actions</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manage Funding Account</fullName>
+                <default>false</default>
+                <label>Manage</label>
+            </value>
+            <value>
+                <fullName>Show Funding Account Balance</fullName>
+                <default>false</default>
+                <label>Balance</label>
+            </value>
+            <value>
+                <fullName>Show Funding Account Statements</fullName>
+                <default>false</default>
+                <label>Statements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participant_Management_Flow__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used for Flow Magic Picklist to launch a collection of participant management tasks.</inlineHelpText>
+    <label>Participant Management</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manage Card</fullName>
+                <default>false</default>
+                <label>Manage Card</label>
+            </value>
+            <value>
+                <fullName>Update Permission</fullName>
+                <default>false</default>
+                <label>Update Permission</label>
+            </value>
+            <value>
+                <fullName>View Transactions</fullName>
+                <default>false</default>
+                <label>View Transactions</label>
+            </value>
+            <value>
+                <fullName>Manage Application</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manage Application</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
