@@ -25,6 +25,10 @@
                 <behavior>Edit</behavior>
                 <field>Preferred_Store__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Contact__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
