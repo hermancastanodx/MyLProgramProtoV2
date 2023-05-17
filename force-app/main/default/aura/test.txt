@@ -1,0 +1,29 @@
+{"alg":"RS256"},
+{
+"Iss" : "3MVG9wt4IL4O5wvI4fSWg3yKKSBaRmfSYmQ8lXYnX6c2Q7JGoMHY8y5zesb6c.oLTfz6Kc5YT5dHCKZEwv5Ha",
+"sub": "herman.castano.pptest@gmail.com",
+"aud": "https://login.salesforce.com",
+"exp": "1684161617"
+},
+
+Consumerkey:
+3MVG9wt4IL4O5wvI4fSWg3yKKSBaRmfSYmQ8lXYnX6c2Q7JGoMHY8y5zesb6c.oLTfz6Kc5YT5dHCKZEwv5Ha
+
+
+
+keytool -importkeystore -srckeystore testkeystore.p12 -srcstoretype pkcs12 -destkeystore servercert.jks -deststoretype JKS
+keytool -importkeystore -srckeystore testkeystore.p12 \ -srcstoretype pkcs12 \ -destkeystore servercert.jks \ -deststoretype JKS
+
+keytool -keystore /servercert.jks -changealias -alias 1 -destalias salesforcetest
+
+
+
+
+https://hermandevorg-dev-ed.develop.my.salesforce.com/services/oauth2/authorize?response_type=token&client_id=3MVG9wt4IL4O5wvI4fSWg3yKKSBaRmfSYmQ8lXYnX6c2Q7JGoMHY8y5zesb6c.oLTfz6Kc5YT5dHCKZEwv5Ha&redirect_uri=http://localhost:1717/OauthRedirect
+
+sfdx auth:jwt:grant --clientid 3MVG9wt4IL4O5wvI4fSWg3yKKSBaRmfSYmQ8lXYnX6c2Q7JGoMHY8y5zesb6c.oLTfz6Kc5YT5dHCKZEwv5Ha \
+--jwtkeyfile myKey.key --username herman.castano.pptest@gmail.com \
+--setdefaultdevhubusername --setalias DevHub
+
+
+req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout myKey.key -out myCertificate.crt
